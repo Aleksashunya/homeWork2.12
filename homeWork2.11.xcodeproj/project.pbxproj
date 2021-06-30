@@ -19,8 +19,6 @@
 		7A7E2CD0268723F300DA6ED8 /* TotalInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2CCF268723F300DA6ED8 /* TotalInfoData.swift */; };
 		7A7E2CD32688103C00DA6ED8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2CD22688103C00DA6ED8 /* Constants.swift */; };
 		7A7E2CD526881E9D00DA6ED8 /* NetworkTotalInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2CD426881E9D00DA6ED8 /* NetworkTotalInfoManager.swift */; };
-		7A7E2CD7268821B000DA6ED8 /* TotalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2CD6268821B000DA6ED8 /* TotalInfo.swift */; };
-		7A7E2CD92688246A00DA6ED8 /* CountryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2CD82688246A00DA6ED8 /* CountryInfo.swift */; };
 		7A7E2CDB26883A1300DA6ED8 /* NetworkCountryInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2CDA26883A1300DA6ED8 /* NetworkCountryInfoManager.swift */; };
 		7AD6CCB4268CA0000041CCF7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6CCB3268CA0000041CCF7 /* .gitignore */; };
 		7AD6CCB6268CA4600041CCF7 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6CCB5268CA4600041CCF7 /* Formatter.swift */; };
@@ -41,8 +39,6 @@
 		7A7E2CCF268723F300DA6ED8 /* TotalInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalInfoData.swift; sourceTree = "<group>"; };
 		7A7E2CD22688103C00DA6ED8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7A7E2CD426881E9D00DA6ED8 /* NetworkTotalInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTotalInfoManager.swift; sourceTree = "<group>"; };
-		7A7E2CD6268821B000DA6ED8 /* TotalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalInfo.swift; sourceTree = "<group>"; };
-		7A7E2CD82688246A00DA6ED8 /* CountryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfo.swift; sourceTree = "<group>"; };
 		7A7E2CDA26883A1300DA6ED8 /* NetworkCountryInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCountryInfoManager.swift; sourceTree = "<group>"; };
 		7AD6CCB3268CA0000041CCF7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7AD6CCB5268CA4600041CCF7 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
@@ -133,8 +129,6 @@
 			children = (
 				7A7E2CCF268723F300DA6ED8 /* TotalInfoData.swift */,
 				7A7E2CCD26871D0300DA6ED8 /* CountryInfoData.swift */,
-				7A7E2CD6268821B000DA6ED8 /* TotalInfo.swift */,
-				7A7E2CD82688246A00DA6ED8 /* CountryInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -286,8 +280,6 @@
 				7A7E2CD526881E9D00DA6ED8 /* NetworkTotalInfoManager.swift in Sources */,
 				7A7E2CCE26871D0300DA6ED8 /* CountryInfoData.swift in Sources */,
 				7A7E2CB7268707B800DA6ED8 /* SceneDelegate.swift in Sources */,
-				7A7E2CD92688246A00DA6ED8 /* CountryInfo.swift in Sources */,
-				7A7E2CD7268821B000DA6ED8 /* TotalInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

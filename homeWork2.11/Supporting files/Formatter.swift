@@ -19,6 +19,5 @@ extension Int {
         
         let formatted = String(describing: formatter.string(for: self) ?? "0")
         return formatted
-        
     }
 }

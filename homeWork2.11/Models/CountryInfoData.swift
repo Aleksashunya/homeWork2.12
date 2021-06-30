@@ -11,4 +11,12 @@ struct CountryInfoData: Decodable {
     let recovered: Int
     let critical: Int
     let deaths: Int
+    
+    enum Titles: String, CaseIterable {
+        case country = "Страна"
+        case confirmed = "Подтвержденно случаев"
+        case recovered = "Выздоровели"
+        case critical = "В критическом состоянии"
+        case deaths = "Умерли"
+    }
 }

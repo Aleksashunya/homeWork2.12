@@ -8,7 +8,7 @@ import Foundation
 import Alamofire
 
 struct NetworkTotalInfoManager {
-    var onCompletion: ((TotalInfo) -> Void)?
+    var onCompletion: ((TotalInfoData) -> Void)?
     
     func fetchTotalInfo() {
         AF.request(URLs.totalUrl.rawValue, headers: headers as HTTPHeaders)
@@ -17,8 +17,7 @@ struct NetworkTotalInfoManager {
                 switch dataResponse.result {
                 case .success(let value):
                     DispatchQueue.main.async {
-                        guard let totalInfo = TotalInfo(totalInfoData: value[0]) else { return }
-                        self.onCompletion!(totalInfo)
+                        self.onCompletion!(value[0])
                     }
                 case .failure(let error):
                     print(error)
