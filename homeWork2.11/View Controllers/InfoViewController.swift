@@ -45,6 +45,8 @@ extension InfoViewController {
         var content = cell.defaultContentConfiguration()
         
         content.text = CountryInfo.Titles.allCases[indexPath.row].rawValue
+        content.textProperties.color = .black
+        content.textProperties.font = UIFont (name: "Apple SD Gothic Neo", size: 16)!
         
         switch indexPath.row {
         case 0:

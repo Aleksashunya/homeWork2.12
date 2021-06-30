@@ -6,10 +6,13 @@
 //
 
 // MARK: Constants for API requests
+import Alamofire
 
-let headers = [
+let headers: HTTPHeaders = [
     "x-rapidapi-key": "c0bdc88fc2msh1a2775b56982d71p1f2782jsnc18a6e23509e",
     "x-rapidapi-host": "covid-19-data.p.rapidapi.com" ]
 
-let totalUrl = "https://covid-19-data.p.rapidapi.com/totals"
-let countryUrl = "https://covid-19-data.p.rapidapi.com/country?name="
+enum URLs: String {
+    case totalUrl = "https://covid-19-data.p.rapidapi.com/totals"
+    case countryUrl = "https://covid-19-data.p.rapidapi.com/country?name="
+}

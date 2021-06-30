@@ -50,9 +50,9 @@ extension MainViewController {
         networkTotalInfoManager.onCompletion = { totalInfo in
             
             DispatchQueue.main.async {
-                self.confirmedLabel.text = "\(totalInfo.confirmedFormatted) человек"
-                self.deathsLabel.text = "\(totalInfo.deathsFormatted) человек"
-                self.recoveredLabel.text = "\(totalInfo.recoveredFormatted) человек"
+                self.confirmedLabel.text = "\(totalInfo.confirmed?.formatting() ?? "0") человек"
+                self.deathsLabel.text = "\(totalInfo.deaths?.formatting() ?? "0") человек"
+                self.recoveredLabel.text = "\(totalInfo.recovered?.formatting() ?? "0") человек"
                 self.activityIndicator.stopAnimating()
             }
         }
