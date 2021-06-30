@@ -21,7 +21,7 @@
 		7A7E2CD526881E9D00DA6ED8 /* NetworkTotalInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2CD426881E9D00DA6ED8 /* NetworkTotalInfoManager.swift */; };
 		7A7E2CDB26883A1300DA6ED8 /* NetworkCountryInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2CDA26883A1300DA6ED8 /* NetworkCountryInfoManager.swift */; };
 		7AD6CCB4268CA0000041CCF7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6CCB3268CA0000041CCF7 /* .gitignore */; };
-		7AD6CCB6268CA4600041CCF7 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6CCB5268CA4600041CCF7 /* Formatter.swift */; };
+		7AD6CCB6268CA4600041CCF7 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6CCB5268CA4600041CCF7 /* Int+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,7 @@
 		7A7E2CD426881E9D00DA6ED8 /* NetworkTotalInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTotalInfoManager.swift; sourceTree = "<group>"; };
 		7A7E2CDA26883A1300DA6ED8 /* NetworkCountryInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCountryInfoManager.swift; sourceTree = "<group>"; };
 		7AD6CCB3268CA0000041CCF7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		7AD6CCB5268CA4600041CCF7 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		7AD6CCB5268CA4600041CCF7 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		9EFEDA3706F059FC4FF1CE70 /* Pods_homeWork2_11.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homeWork2_11.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6730785B37BC6DDF66B9800 /* Pods-homeWork2.11.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeWork2.11.release.xcconfig"; path = "Target Support Files/Pods-homeWork2.11/Pods-homeWork2.11.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +96,7 @@
 		7A7E2CB3268707B800DA6ED8 /* homeWork2.11 */ = {
 			isa = PBXGroup;
 			children = (
+				7AD6CCB7268D1AB50041CCF7 /* Extensions */,
 				7AD6CCB2268C64CE0041CCF7 /* Managers */,
 				7A7E2CD126880FF800DA6ED8 /* Supporting files */,
 				7A7E2CCC26871C4500DA6ED8 /* Models */,
@@ -141,7 +142,6 @@
 				7A7E2CC2268707BA00DA6ED8 /* Info.plist */,
 				7A7E2CB4268707B800DA6ED8 /* AppDelegate.swift */,
 				7A7E2CD22688103C00DA6ED8 /* Constants.swift */,
-				7AD6CCB5268CA4600041CCF7 /* Formatter.swift */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -153,6 +153,14 @@
 				7A7E2CDA26883A1300DA6ED8 /* NetworkCountryInfoManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		7AD6CCB7268D1AB50041CCF7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7AD6CCB5268CA4600041CCF7 /* Int+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +284,7 @@
 				7A7E2CC926870A5800DA6ED8 /* InfoViewController.swift in Sources */,
 				7A7E2CDB26883A1300DA6ED8 /* NetworkCountryInfoManager.swift in Sources */,
 				7A7E2CD32688103C00DA6ED8 /* Constants.swift in Sources */,
-				7AD6CCB6268CA4600041CCF7 /* Formatter.swift in Sources */,
+				7AD6CCB6268CA4600041CCF7 /* Int+Extensions.swift in Sources */,
 				7A7E2CD526881E9D00DA6ED8 /* NetworkTotalInfoManager.swift in Sources */,
 				7A7E2CCE26871D0300DA6ED8 /* CountryInfoData.swift in Sources */,
 				7A7E2CB7268707B800DA6ED8 /* SceneDelegate.swift in Sources */,
