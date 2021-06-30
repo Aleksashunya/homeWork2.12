@@ -76,10 +76,10 @@ extension InfoViewController {
         networkCountryInfoManager.onCompletion = { countryInfo in
             
             self.country = countryInfo.country
-            self.confirmed = countryInfo.confirmedFormatted
-            self.recovered = countryInfo.recoveredFormatted
-            self.critical = countryInfo.criticalFormatted
-            self.deaths = countryInfo.deathsFormatted
+            self.confirmed = countryInfo.confirmed.formatting()
+            self.recovered = countryInfo.recovered.formatting()
+            self.critical = countryInfo.critical.formatting()
+            self.deaths = countryInfo.deaths.formatting()
             self.code = countryInfo.code
             
             DispatchQueue.main.async {
