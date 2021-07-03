@@ -10,7 +10,7 @@
         <!--Информация о COVID-19-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="homeWork2_10" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="homeWork2_12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,61 +28,61 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="rVh-Y8-SiO">
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="241"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="На данный момент в мире" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="w41-fR-vNo">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="64"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="На данный момент в мире/Прирост" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="w41-fR-vNo">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="37"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Bp5-P1-MuZ">
-                                                <rect key="frame" x="0.0" y="64" width="187.5" height="177"/>
+                                                <rect key="frame" x="0.0" y="37" width="187.5" height="204"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Rxo-6l-4s0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="57.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="66.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Заболели:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="JDa-LC-GFR">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="27.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="32"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0 человек" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="U7S-UT-bqL">
-                                                                <rect key="frame" x="0.0" y="29.5" width="187.5" height="28"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                <rect key="frame" x="0.0" y="34" width="187.5" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="JnQ-Uo-arw">
-                                                        <rect key="frame" x="0.0" y="59.5" width="187.5" height="57.5"/>
+                                                        <rect key="frame" x="0.0" y="68.5" width="187.5" height="66.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Выздоровели:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="NrD-PD-TFf">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="28"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="32.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0 человек" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="m0M-Gh-aBQ">
-                                                                <rect key="frame" x="0.0" y="30" width="187.5" height="27.5"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                <rect key="frame" x="0.0" y="34.5" width="187.5" height="32"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="F2J-2d-SmJ">
-                                                        <rect key="frame" x="0.0" y="119" width="187.5" height="58"/>
+                                                        <rect key="frame" x="0.0" y="137" width="187.5" height="67"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Умерли:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="r7b-T7-NOd">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="28"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="32.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0 человек" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="dqT-1I-7ZG">
-                                                                <rect key="frame" x="0.0" y="30" width="187.5" height="28"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                <rect key="frame" x="0.0" y="34.5" width="187.5" height="32.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -158,7 +158,13 @@
                             <constraint firstItem="hHh-RZ-51I" firstAttribute="width" secondItem="VGg-hK-nOr" secondAttribute="width" multiplier="0.5" id="qoX-jy-kuz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Информация о COVID-19" id="MFY-kd-wkv"/>
+                    <navigationItem key="navigationItem" title="Информация о COVID-19" id="MFY-kd-wkv">
+                        <barButtonItem key="rightBarButtonItem" image="folder" catalog="system" id="FFd-1I-sq9">
+                            <connections>
+                                <segue destination="71I-NZ-k7V" kind="show" id="XZg-SH-MMA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="yYo-g6-GqC" id="JNm-SZ-T8w"/>
                         <outlet property="confirmedLabel" destination="U7S-UT-bqL" id="odP-QZ-AaP"/>
@@ -171,14 +177,60 @@
             </objects>
             <point key="canvasLocation" x="1027.5" y="113.02816901408451"/>
         </scene>
+        <!--Мои страны-->
+        <scene sceneID="xz1-9T-EkK">
+            <objects>
+                <tableViewController id="71I-NZ-k7V" customClass="MyCountriesTableViewController" customModule="homeWork2_12" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gWL-x1-YGN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.74117647060000003" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCountryCell" textLabel="eXh-vp-xtJ" detailTextLabel="eqJ-m5-yU2" style="IBUITableViewCellStyleValue1" id="H7t-yH-nn7">
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H7t-yH-nn7" id="Kip-jZ-zEi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eXh-vp-xtJ">
+                                            <rect key="frame" x="16" y="15" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eqJ-m5-yU2">
+                                            <rect key="frame" x="326" y="15" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="71I-NZ-k7V" id="9rk-l3-3XV"/>
+                            <outlet property="delegate" destination="71I-NZ-k7V" id="SpT-cj-LZq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Мои страны" id="549-Em-Zd4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zg6-zy-vGK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="-640"/>
+        </scene>
         <!--Статистика страны-->
         <scene sceneID="ZHg-7H-L21">
             <objects>
-                <tableViewController id="3hc-xj-mIm" customClass="InfoViewController" customModule="homeWork2_10" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="3hc-xj-mIm" customClass="InfoViewController" customModule="homeWork2_12" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="j7l-vL-Uk7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.43529411759999997" green="0.74117647060000003" blue="0.74901960779999999" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.74117647060000003" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" textLabel="5u9-hb-gyq" detailTextLabel="maS-Fk-tPn" style="IBUITableViewCellStyleValue1" id="xif-wv-h4B">
                                 <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
@@ -214,11 +266,17 @@
                             <outlet property="delegate" destination="3hc-xj-mIm" id="p0V-W2-DKN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Статистика страны" largeTitleDisplayMode="always" id="6Yd-wD-ZdR"/>
+                    <navigationItem key="navigationItem" title="Статистика страны" largeTitleDisplayMode="always" id="6Yd-wD-ZdR">
+                        <barButtonItem key="rightBarButtonItem" title="Следить" id="N3d-Fg-K3e">
+                            <connections>
+                                <action selector="followButtonTapped:" destination="3hc-xj-mIm" id="2Eo-45-NVu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAT-dy-gqM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1881.1594202898552" y="115.84821428571428"/>
+            <point key="canvasLocation" x="1900" y="113"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rfM-zn-aHF">
@@ -248,6 +306,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="folder" catalog="system" width="128" height="97"/>
         <image name="mainViewImage" width="4000" height="4000"/>
     </resources>
 </document>

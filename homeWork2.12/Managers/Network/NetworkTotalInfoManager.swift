@@ -8,16 +8,17 @@ import Foundation
 import Alamofire
 
 struct NetworkTotalInfoManager {
-    var onCompletion: ((TotalInfoData) -> Void)?
     
-    func fetchTotalInfo() {
+    static var shared = NetworkTotalInfoManager()
+    
+    func fetchTotalInfo(completionHandler: @escaping (TotalInfoData) -> Void?) {
         AF.request(URLs.totalUrl.rawValue, headers: headers as HTTPHeaders)
             .validate()
             .responseDecodable(of: [TotalInfoData].self) { dataResponse in
                 switch dataResponse.result {
                 case .success(let value):
                     DispatchQueue.main.async {
-                        self.onCompletion!(value[0])
+                        completionHandler(value[0])
                     }
                 case .failure(let error):
                     print(error)

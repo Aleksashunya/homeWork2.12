@@ -8,16 +8,17 @@ import Foundation
 import Alamofire
 
 struct NetworkCountryInfoManager {
-    var onCompletion: ((CountryInfoData) -> Void)?
     
-    func fetchCountryInfo(country: String) {
+    static var shared = NetworkCountryInfoManager()
+    
+    func fetchCountryInfo(country: String, completionHandler: @escaping (CountryInfoData) -> Void) {
         AF.request("\(URLs.countryUrl.rawValue)\(country)", headers: headers as HTTPHeaders)
             .validate()
             .responseDecodable(of: [CountryInfoData].self) { dataResponse in
                 switch dataResponse.result {
                 case .success(let value):
                     DispatchQueue.main.async {
-                        self.onCompletion!(value[0])
+                        completionHandler(value[0])
                     }
                 case .failure(let error):
                     print(error)

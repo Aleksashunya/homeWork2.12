@@ -4,11 +4,10 @@
 //
 //  Created by Александра Мельникова on 30.06.2021.
 //
-
 import Foundation
 
 extension Int {
-    func formatting () -> String {
+    func formatting() -> String {
         var formatter: NumberFormatter {
             let format = NumberFormatter()
             

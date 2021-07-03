@@ -14,8 +14,7 @@ class InfoViewController: UITableViewController {
     var critical = ""
     var deaths = ""
     var code = ""
-    
-    var networkCountryInfoManager = NetworkCountryInfoManager()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +49,7 @@ extension InfoViewController {
         
         switch indexPath.row {
         case 0:
-            content.secondaryText = "\(country)  \(getFlag(from: code))"
+            content.secondaryText = "\(country)  \(GetFlag().getFlag(from: code))"
         case 1:
             content.secondaryText = confirmed
         case 2:
@@ -73,7 +72,7 @@ extension InfoViewController {
 extension InfoViewController {
     func setCountryInfo(_ country: String) {
         
-        networkCountryInfoManager.onCompletion = { countryInfo in
+        NetworkCountryInfoManager.shared.fetchCountryInfo(country: country) { countryInfo in
             
             self.country = countryInfo.country
             self.confirmed = countryInfo.confirmed.formatting()
@@ -86,16 +85,17 @@ extension InfoViewController {
                 self.tableView.reloadData()
             }
         }
-        self.networkCountryInfoManager.fetchCountryInfo(country: country)
-    }
-    
-    func getFlag(from countryCode: String) -> String {
-        return countryCode
-            .unicodeScalars
-            .map({ 127397 + $0.value })
-            .compactMap(UnicodeScalar.init)
-            .map(String.init)
-            .joined()
     }
 }
 
+// MARK: Follow Button
+
+extension InfoViewController {
+    
+    @IBAction func followButtonTapped(_ sender: UIBarButtonItem) {
+        
+        NetworkCountryInfoManager.shared.fetchCountryInfo(country: country) { countryInfo in
+            StorageMyCountriesManager.shared.saveNewCountry(countryInfo: countryInfo)
+        }
+    }
+}

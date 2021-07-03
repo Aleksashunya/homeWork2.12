@@ -15,8 +15,6 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var countryTextField: UITextField!
     
-    var networkTotalInfoManager = NetworkTotalInfoManager()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,16 +45,24 @@ class MainViewController: UIViewController {
 
 extension MainViewController {
     func setTotalInfo() {
-        networkTotalInfoManager.onCompletion = { totalInfo in
+        
+        NetworkTotalInfoManager.shared.fetchTotalInfo() { totalInfo in
             
             DispatchQueue.main.async {
-                self.confirmedLabel.text = "\(totalInfo.confirmed?.formatting() ?? "0") человек"
-                self.deathsLabel.text = "\(totalInfo.deaths?.formatting() ?? "0") человек"
-                self.recoveredLabel.text = "\(totalInfo.recovered?.formatting() ?? "0") человек"
+                let previosTotalInfo = StorageTotalInfoManager.shared.fetchTotalData()
+                
+                let differenceConfirmed = Int(totalInfo.confirmed ?? 0) - Int(previosTotalInfo?.confirmed ?? 0)
+                let differenceDeaths = Int(totalInfo.deaths ?? 0) - Int(previosTotalInfo?.deaths ?? 0)
+                let differenceRecover = Int(totalInfo.recovered ?? 0) - Int(previosTotalInfo?.recovered ?? 0)
+                
+                self.confirmedLabel.text = "\(totalInfo.confirmed?.formatting() ?? "0") (+\(differenceConfirmed.formatting()))"
+                self.deathsLabel.text = "\(totalInfo.deaths?.formatting() ?? "0") (+\(differenceDeaths.formatting()))"
+                self.recoveredLabel.text = "\(totalInfo.recovered?.formatting() ?? "0") (+\(differenceRecover.formatting()))"
+                
+                StorageTotalInfoManager.shared.save(totalInfo: totalInfo)
                 self.activityIndicator.stopAnimating()
             }
         }
-        self.networkTotalInfoManager.fetchTotalInfo()
     }
 }
 
