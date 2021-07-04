@@ -14,8 +14,8 @@
             filePath = "homeWork2.12/Views/CustomHeaderView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "deleteButtonTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>

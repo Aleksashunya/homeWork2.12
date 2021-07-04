@@ -16,7 +16,9 @@ class StorageTotalInfoManager {
     private init() {
         archiveUrl = documentDirectory.appendingPathComponent("TotalInfo").appendingPathExtension("plist")
     }
-    
+}
+
+extension StorageTotalInfoManager {
     func save(totalInfo: TotalInfoData) {
         DispatchQueue.main.async {
             guard let totalData = try? PropertyListEncoder().encode(totalInfo) else {

@@ -14,7 +14,6 @@ class InfoViewController: UITableViewController {
     var critical = ""
     var deaths = ""
     var code = ""
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,7 +87,7 @@ extension InfoViewController {
     }
 }
 
-// MARK: Follow Button
+// MARK: Follow Button Functionality
 
 extension InfoViewController {
     

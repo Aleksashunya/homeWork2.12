@@ -18,13 +18,16 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUI-dq-ILz">
-                            <rect key="frame" x="16" y="16" width="382" height="68"/>
+                            <rect key="frame" x="16" y="16" width="258" height="68"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGQ-Va-aAa">
-                            <rect key="frame" x="20" y="0.0" width="374" height="100"/>
+                            <rect key="frame" x="344" y="0.0" width="50" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Por-6U-VxG"/>
+                            </constraints>
                             <color key="tintColor" systemColor="labelColor"/>
                             <state key="normal">
                                 <imageReference key="image" image="chevron.down" catalog="system" symbolScale="large"/>
@@ -34,7 +37,10 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7x-2T-dLk">
-                            <rect key="frame" x="324.5" y="0.0" width="19.5" height="100"/>
+                            <rect key="frame" x="294" y="0.0" width="50" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="9ha-Ek-LoS"/>
+                            </constraints>
                             <color key="tintColor" systemColor="systemRedColor"/>
                             <state key="normal">
                                 <imageReference key="image" image="trash.fill" catalog="system" symbolScale="medium"/>
@@ -48,19 +54,17 @@
                     <constraints>
                         <constraint firstItem="dGQ-Va-aAa" firstAttribute="top" secondItem="x8P-6g-I0D" secondAttribute="top" id="3wa-5g-3c7"/>
                         <constraint firstAttribute="trailing" secondItem="dGQ-Va-aAa" secondAttribute="trailing" constant="20" id="8gv-lF-8qN"/>
-                        <constraint firstAttribute="trailing" secondItem="aUI-dq-ILz" secondAttribute="trailing" constant="16" id="GE9-Ce-agb"/>
-                        <constraint firstItem="dGQ-Va-aAa" firstAttribute="leading" secondItem="x8P-6g-I0D" secondAttribute="leading" constant="20" id="LHn-BA-9YD"/>
                         <constraint firstItem="aUI-dq-ILz" firstAttribute="leading" secondItem="x8P-6g-I0D" secondAttribute="leading" constant="16" id="LUu-Of-zQ6"/>
                         <constraint firstAttribute="bottom" secondItem="x7x-2T-dLk" secondAttribute="bottom" id="Okg-9N-zzn"/>
+                        <constraint firstItem="dGQ-Va-aAa" firstAttribute="leading" secondItem="x7x-2T-dLk" secondAttribute="trailing" id="R5y-2A-gm1"/>
                         <constraint firstAttribute="bottom" secondItem="dGQ-Va-aAa" secondAttribute="bottom" id="T2f-Ru-gOK"/>
+                        <constraint firstItem="x7x-2T-dLk" firstAttribute="leading" secondItem="aUI-dq-ILz" secondAttribute="trailing" constant="20" id="d0d-Ly-VRh"/>
                         <constraint firstAttribute="bottom" secondItem="aUI-dq-ILz" secondAttribute="bottom" constant="16" id="dYr-Ex-jxy"/>
                         <constraint firstItem="x7x-2T-dLk" firstAttribute="top" secondItem="x8P-6g-I0D" secondAttribute="top" id="p7e-ND-jf4"/>
-                        <constraint firstItem="dGQ-Va-aAa" firstAttribute="trailing" secondItem="x7x-2T-dLk" secondAttribute="trailing" constant="50" id="snh-bo-JkE"/>
                         <constraint firstItem="aUI-dq-ILz" firstAttribute="top" secondItem="x8P-6g-I0D" secondAttribute="top" constant="16" id="whf-uk-6a3"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="x8P-6g-I0D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1jk-gN-14r"/>
                 <constraint firstAttribute="bottom" secondItem="x8P-6g-I0D" secondAttribute="bottom" id="JYm-2F-r2I"/>
@@ -81,9 +85,6 @@
         <image name="trash.fill" catalog="system" width="121" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

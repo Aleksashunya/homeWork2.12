@@ -8,7 +8,6 @@
 import Foundation
 
 struct GetFlag {
-    
     func getFlag(from countryCode: String) -> String {
         return countryCode
             .unicodeScalars

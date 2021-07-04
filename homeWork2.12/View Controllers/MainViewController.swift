@@ -12,7 +12,6 @@ class MainViewController: UIViewController {
     @IBOutlet weak var recoveredLabel: UILabel!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
     @IBOutlet weak var countryTextField: UITextField!
     
     override func viewDidLoad() {
@@ -20,9 +19,7 @@ class MainViewController: UIViewController {
         
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
-        
         self.countryTextField.delegate = self
-        
         setTotalInfo()
     }
     
