@@ -13,8 +13,11 @@ class StorageMyCountriesManager {
     private var archiveUrl: URL
     private let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     
+    
+    
     private init() {
         archiveUrl = documentDirectory.appendingPathComponent("MyCountriesInfo").appendingPathExtension("plist")
+        print(archiveUrl)
     }
     
     func saveNewCountry(countryInfo: CountryInfoData) {
@@ -31,6 +34,21 @@ class StorageMyCountriesManager {
             try? countryData.write(to: self.archiveUrl, options: .noFileProtection)
         }
     }
+    
+    
+    func deleteCountry(_ section: Int) {
+        
+        var countriesInfo = fetchCountryInfo()
+                
+                countriesInfo.remove(at: section)
+                guard let countryData = try? PropertyListEncoder().encode(countriesInfo) else {
+                    return
+                }
+                
+                try? countryData.write(to: self.archiveUrl, options: .noFileProtection)
+
+    }
+    
     
     func updateCountriesInfo() {
         var countriesInfo = fetchCountryInfo()

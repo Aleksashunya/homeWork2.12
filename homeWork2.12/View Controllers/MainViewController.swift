@@ -49,15 +49,21 @@ extension MainViewController {
         NetworkTotalInfoManager.shared.fetchTotalInfo() { totalInfo in
             
             DispatchQueue.main.async {
-                let previosTotalInfo = StorageTotalInfoManager.shared.fetchTotalData()
                 
-                let differenceConfirmed = Int(totalInfo.confirmed ?? 0) - Int(previosTotalInfo?.confirmed ?? 0)
-                let differenceDeaths = Int(totalInfo.deaths ?? 0) - Int(previosTotalInfo?.deaths ?? 0)
-                let differenceRecover = Int(totalInfo.recovered ?? 0) - Int(previosTotalInfo?.recovered ?? 0)
+                var differenceConfirmed = ""
+                var differenceDeaths = ""
+                var differenceRecover = ""
                 
-                self.confirmedLabel.text = "\(totalInfo.confirmed?.formatting() ?? "0") (+\(differenceConfirmed.formatting()))"
-                self.deathsLabel.text = "\(totalInfo.deaths?.formatting() ?? "0") (+\(differenceDeaths.formatting()))"
-                self.recoveredLabel.text = "\(totalInfo.recovered?.formatting() ?? "0") (+\(differenceRecover.formatting()))"
+                if let previosTotalInfo = StorageTotalInfoManager.shared.fetchTotalData() {
+                    
+                    differenceConfirmed = "(+\((Int(totalInfo.confirmed ?? 0) - Int(previosTotalInfo.confirmed ?? 0)).formatting()))"
+                    differenceDeaths = "(+\((Int(totalInfo.deaths ?? 0) - Int(previosTotalInfo.deaths ?? 0)).formatting()))"
+                    differenceRecover = "(+\((Int(totalInfo.recovered ?? 0) - Int(previosTotalInfo.recovered ?? 0)).formatting()))"
+                }
+                
+                self.confirmedLabel.text = "\(totalInfo.confirmed?.formatting() ?? "0") \(differenceConfirmed)"
+                self.deathsLabel.text = "\(totalInfo.deaths?.formatting() ?? "0") \(differenceDeaths)"
+                self.recoveredLabel.text = "\(totalInfo.recovered?.formatting() ?? "0") \(differenceRecover)"
                 
                 StorageTotalInfoManager.shared.save(totalInfo: totalInfo)
                 self.activityIndicator.stopAnimating()

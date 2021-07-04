@@ -4,7 +4,7 @@
 //
 //  Created by Александра Мельникова on 26.06.2021.
 //
-struct CountryInfoData: Codable {
+struct CountryInfoData: Codable, Equatable {
     let country: String
     let code: String
     let confirmed: Int

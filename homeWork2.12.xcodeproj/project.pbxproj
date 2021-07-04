@@ -12,6 +12,8 @@
 		7A48AE1F269096EB0042B055 /* MyCountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48AE1E269096EB0042B055 /* MyCountriesTableViewController.swift */; };
 		7A48AE21269099D70042B055 /* StorageMyCountriesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48AE20269099D70042B055 /* StorageMyCountriesManager.swift */; };
 		7A48AE252690C00E0042B055 /* GetFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48AE242690C00E0042B055 /* GetFlag.swift */; };
+		7A48AE2C269152E30042B055 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48AE2B269152E30042B055 /* CustomHeaderView.swift */; };
+		7A48AE2E269152F40042B055 /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A48AE2D269152F40042B055 /* CustomHeaderView.xib */; };
 		7A7E2CB5268707B800DA6ED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2CB4268707B800DA6ED8 /* AppDelegate.swift */; };
 		7A7E2CB7268707B800DA6ED8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2CB6268707B800DA6ED8 /* SceneDelegate.swift */; };
 		7A7E2CB9268707B800DA6ED8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E2CB8268707B800DA6ED8 /* MainViewController.swift */; };
@@ -34,6 +36,8 @@
 		7A48AE1E269096EB0042B055 /* MyCountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCountriesTableViewController.swift; sourceTree = "<group>"; };
 		7A48AE20269099D70042B055 /* StorageMyCountriesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageMyCountriesManager.swift; sourceTree = "<group>"; };
 		7A48AE242690C00E0042B055 /* GetFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFlag.swift; sourceTree = "<group>"; };
+		7A48AE2B269152E30042B055 /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		7A48AE2D269152F40042B055 /* CustomHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
 		7A7E2CB1268707B800DA6ED8 /* homeWork2.12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homeWork2.12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7E2CB4268707B800DA6ED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A7E2CB6268707B800DA6ED8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +105,15 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		7A48AE2626914A370042B055 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A48AE2B269152E30042B055 /* CustomHeaderView.swift */,
+				7A48AE2D269152F40042B055 /* CustomHeaderView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7A7E2CA8268707B800DA6ED8 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 		7A7E2CB3268707B800DA6ED8 /* homeWork2.12 */ = {
 			isa = PBXGroup;
 			children = (
+				7A48AE2626914A370042B055 /* Views */,
 				7AD6CCB7268D1AB50041CCF7 /* Extensions */,
 				7AD6CCB2268C64CE0041CCF7 /* Managers */,
 				7A7E2CD126880FF800DA6ED8 /* Supporting files */,
@@ -250,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A48AE2E269152F40042B055 /* CustomHeaderView.xib in Resources */,
 				7AD6CCB4268CA0000041CCF7 /* .gitignore in Resources */,
 				7A7E2CC1268707BA00DA6ED8 /* LaunchScreen.storyboard in Resources */,
 				7A7E2CBE268707BA00DA6ED8 /* Assets.xcassets in Resources */,
@@ -316,6 +331,7 @@
 				7A7E2CD32688103C00DA6ED8 /* Constants.swift in Sources */,
 				7AD6CCB6268CA4600041CCF7 /* Int+Extensions.swift in Sources */,
 				7A48AE1D269083840042B055 /* StorageTotalInfoManager.swift in Sources */,
+				7A48AE2C269152E30042B055 /* CustomHeaderView.swift in Sources */,
 				7A48AE252690C00E0042B055 /* GetFlag.swift in Sources */,
 				7A7E2CD526881E9D00DA6ED8 /* NetworkTotalInfoManager.swift in Sources */,
 				7A7E2CCE26871D0300DA6ED8 /* CountryInfoData.swift in Sources */,

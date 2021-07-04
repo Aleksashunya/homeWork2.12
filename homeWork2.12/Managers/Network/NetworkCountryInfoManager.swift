@@ -12,7 +12,8 @@ struct NetworkCountryInfoManager {
     static var shared = NetworkCountryInfoManager()
     
     func fetchCountryInfo(country: String, completionHandler: @escaping (CountryInfoData) -> Void) {
-        AF.request("\(URLs.countryUrl.rawValue)\(country)", headers: headers as HTTPHeaders)
+        AF.request("\(URLs.countryUrl.rawValue)\(country)", headers: headers as HTTPHeaders) {  urlRequest in
+            urlRequest.timeoutInterval = 30.0 }
             .validate()
             .responseDecodable(of: [CountryInfoData].self) { dataResponse in
                 switch dataResponse.result {
